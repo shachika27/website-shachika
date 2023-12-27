@@ -1,0 +1,50 @@
+@import "../../vars.css";
+
+.personalheading {
+    font-size: 48px;
+    text-align: center;
+}
+
+.scrollcontainer {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 90%;
+    margin: 0 5%;
+}
+
+.images {
+    display: inline-block; /* Display images in a line */
+    animation: scrollAnimation 50s linear infinite;
+    white-space: nowrap;
+}
+    
+.images:hover {
+    animation-play-state: paused;
+}
+
+    .images img {
+        width: auto; /* Let the width adapt */
+        max-height: 250px; /* Set a maximum height to avoid them being too tall */
+        margin-right: 10px;
+    }
+
+        .images img:last-child {
+            margin-right: 0;
+        }
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(calc(-100% - 10px));
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .personalheading {
+        font-size: 24px;
+        text-align: center;
+    }
+}

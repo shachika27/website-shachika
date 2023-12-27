@@ -1,0 +1,11 @@
+:root {
+    /*Colours*/
+    --color-text: #000000;
+    --color-primary: #BD90E6;
+    --color-secondary: #B4F9E3;
+    --color-bg: #D8AE79;
+
+    /*Fonts*/
+    --font-space-mono: "Space Mono";
+    --font-chelsea-market: "Chelsea Market";
+}

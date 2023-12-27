@@ -1,0 +1,179 @@
+@import "../../vars.css";
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+.Title {
+    color: #000;
+    text-align: justify;
+    font-family: Chelsea Market;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.containerProject {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.projectImgLeft img {
+    display: block;
+    margin-right: auto;
+    margin-left: 0;
+    width: 100%;
+}
+
+.projectImgRight img {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    width: 100%;
+}
+
+.projectTitleLeft {
+    flex: 1;
+    text-decoration: none;
+}
+
+.projectTitleRight {
+    flex: 1;
+    text-decoration: none;
+}
+
+.projectHeadingLeft {
+    text-align: left;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    margin-left: 10%;
+}
+
+.projectHeadingRight {
+    text-align: right;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    margin-right: 10%;
+}
+
+.projectTagsLeft {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top: 20px;
+    margin-left: 8%;
+}
+
+.projectTagsLeft img{
+    width: 100%;
+}
+
+.projectTagsRight {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    margin-top: 20px;
+    margin-right: 8%;
+}
+
+.projectTagsRight img {
+    width: 100%;
+}
+
+.left {
+    order: 1;
+}
+
+.right {
+    order: 2;
+}
+
+.containerProject a{
+    text-decoration: none;
+}
+
+.row:hover {
+    background-color: rgba(255, 255, 255,35%);
+}
+
+.row {
+    transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 830px) {
+    .container {
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .containerProject {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .Title {
+        color: #000;
+        text-align: center;
+        font-family: Chelsea Market;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160.7%; /* 44.996px */
+    }
+
+    .projectImgLeft img {
+        width: 100%;
+    }
+
+    .projectHeadingLeft {
+        flex: 1;
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .projectTagsLeft img {
+        width: 100%;
+    }
+
+    .projectImgRight img {
+        width: 100%;
+    }
+
+    .projectHeadingRight {
+        flex: 1;
+        font-size: 18px;
+        text-align: right;
+    }
+
+    .projectTagsRight img {
+        width: 100%;
+    }
+
+    .projectImgLeft,
+    .projectTagsLeft,
+    .projectTitleLeft {
+        flex: 1;
+    }
+    .projectImgRight,
+    .projectTagsRight,
+    .projectTitleRight {
+        flex: 1;
+    }
+}
